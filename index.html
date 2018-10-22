@@ -104,4 +104,27 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+<form id="myform" method="post">
+<label>reply_to</label>
+<input type="text" name="reply_to" />
+<label>from_name</label>
+<input type="text" name="from_name" />
+<label>to_name</label>
+<input type="text" name="to_name" />
+<label>message_html</label>
+<input type="text" name="message_html" />
+<br><br>
+<button>
+Send
+</button>
+</form>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_NOC0wkO50CGHOySKZ2Pwf");
+   })();
+</script>
 </html>
